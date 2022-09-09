@@ -3,7 +3,9 @@ package demoHiber;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+
 @Entity
+//@Table(name="student")
 public class Student {
 	@Id
 	private int id;

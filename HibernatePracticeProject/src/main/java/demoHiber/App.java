@@ -26,8 +26,8 @@ public class App
 //	CREATING SUDENT OBJECT
         Student st = new Student();
 //  GIVING THE VALUES TO SAVE IN DATABASE      
-        st.setId(101);
-        st.setName("Sachin");
+        st.setId(102);
+        st.setName("saurav");
         st.setCity("Mathura");
         System.out.println(st);
         
