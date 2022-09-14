@@ -12,6 +12,9 @@
 		<property name="show_sql">true</property>
 		<mapping class="demoHiber.Student"/>
 		<mapping class="demoHiber.AddressEntity"/>
+		<mapping class="demoHiber.StudentForEmbedableCertificate"/>
+		<mapping class="com.Map.Question"/>
+		<mapping class="com.Map.Answer"/>
 		</session-factory>
 
 	</hibernate-configuration>

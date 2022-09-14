@@ -43,7 +43,7 @@ public class EmbededApp {
 	    Transaction tx = s.beginTransaction();
 	    
 	    // object save
-//	    s.save(student1);
+	    s.save(student1);
 	    s.save(student2);
 	    
 	    tx.commit();

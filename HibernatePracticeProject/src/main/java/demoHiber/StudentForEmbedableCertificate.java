@@ -16,18 +16,6 @@ public class StudentForEmbedableCertificate {
 	
 	private Certificate certi;
 
-	public StudentForEmbedableCertificate() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public StudentForEmbedableCertificate(int id, String name, String city, Certificate certi) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.city = city;
-		this.certi = certi;
-	}
 
 	public int getId() {
 		return id;
@@ -61,6 +49,23 @@ public class StudentForEmbedableCertificate {
 		this.certi = certi;
 	}
 
+
+	public StudentForEmbedableCertificate() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+	public StudentForEmbedableCertificate(int id, String name, String city, Certificate certi) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.city = city;
+		this.certi = certi;
+	}
+
+	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
