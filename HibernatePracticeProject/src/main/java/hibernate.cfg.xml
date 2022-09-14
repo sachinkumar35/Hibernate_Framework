@@ -10,11 +10,12 @@
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<property name="hbm2ddl.auto">create</property>
 		<property name="show_sql">true</property>
+		
 		<mapping class="demoHiber.Student"/>
 		<mapping class="demoHiber.AddressEntity"/>
 		<mapping class="demoHiber.StudentForEmbedableCertificate"/>
-		<mapping class="com.Map.Question"/>
-		<mapping class="com.Map.Answer"/>
+		<mapping class="oneToManyRelationship.Question"/>
+		<mapping class="oneToManyRelationship.Answer"/>
 		</session-factory>
 
 	</hibernate-configuration>
