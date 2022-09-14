@@ -31,6 +31,8 @@ public class MapApp {
         
       //here we are putting answer
         q1.setAnswer(ans);
+      // question setting
+        ans.setQuestion(q1);
         
 // QUESTION 2
         //creating question
@@ -43,6 +45,8 @@ public class MapApp {
         ans1.setAnswer("API to work with objects in java");
       //here we are putting answer
         q2.setAnswer(ans1);
+     // question setting
+        ans1.setQuestion(q2);  
         
         
         
@@ -59,6 +63,12 @@ public class MapApp {
         s.save(ans1);
         
         tx.commit();
+        
+        //fetching data
+        Question newQ =(Question)s.get(Question.class, 1212);
+        System.out.println(newQ.getQuestion());
+        System.out.println(newQ.getAnswer().getAnswer());
+        
         
         s.close();
         
