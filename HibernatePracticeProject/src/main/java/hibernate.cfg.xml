@@ -16,6 +16,8 @@
 		<mapping class="demoHiber.StudentForEmbedableCertificate"/>
 		<mapping class="oneToManyRelationship.Question"/>
 		<mapping class="oneToManyRelationship.Answer"/>
+		<mapping class="manyToManyRelationship.Emp"/>
+		<mapping class="manyToManyRelationship.Project"/>
 		</session-factory>
 
 	</hibernate-configuration>
