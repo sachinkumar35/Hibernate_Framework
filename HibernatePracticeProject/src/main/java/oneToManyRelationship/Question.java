@@ -2,6 +2,7 @@ package oneToManyRelationship;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -21,7 +22,7 @@ public class Question {
 //	@JoinColumn(name="ans_Id")
 //	private Answer answer;
 								 //fetch is used for EAGER Loading 
-	@OneToMany(mappedBy="question",fetch = FetchType.EAGER)
+	@OneToMany(mappedBy="question",fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	private List<Answer> answers;
 	
 	
