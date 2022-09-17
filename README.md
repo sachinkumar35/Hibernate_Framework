@@ -10,3 +10,12 @@ Hibernate is a non-invasive framework, means it won't forces the programmers to 
 It is invented by <b>Gavin King in 2001.</b>
 
 <b>Any type of application can build with</b> Hibernate Framework.
+
+# Hibernate/Persistence lifecycle states
+
+  1. Transient State
+  2. Persistent State
+  3. Detached State
+  4. Removed State
+  
+
