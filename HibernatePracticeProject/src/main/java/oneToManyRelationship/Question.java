@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
@@ -19,8 +20,8 @@ public class Question {
 //	@OneToOne
 //	@JoinColumn(name="ans_Id")
 //	private Answer answer;
-
-	@OneToMany(mappedBy="question")
+								 //fetch is used for EAGER Loading 
+	@OneToMany(mappedBy="question",fetch = FetchType.EAGER)
 	private List<Answer> answers;
 	
 	
